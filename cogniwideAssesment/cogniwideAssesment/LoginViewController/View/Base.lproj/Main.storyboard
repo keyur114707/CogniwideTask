@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deh-ZP-pXA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="cogniwideAssesment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rYJ-T9-4yY">
+                                <rect key="frame" x="20" y="188" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0u4-e5-nxA"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lPs-gD-bUD"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Jn-bW-UlC">
+                                <rect key="frame" x="20" y="248" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fll-9U-4sS"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="uvV-WB-2aU"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gia-wZ-wTe">
+                                <rect key="frame" x="40" y="388" width="334" height="40"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.79607843140000001" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RAK-uH-mHY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gia-wZ-wTe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yE-sk-v70"/>
+                            <constraint firstItem="2Jn-bW-UlC" firstAttribute="top" secondItem="rYJ-T9-4yY" secondAttribute="bottom" constant="20" id="Cgt-fs-glW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rYJ-T9-4yY" secondAttribute="trailing" constant="20" id="MDX-rA-cCA"/>
+                            <constraint firstItem="rYJ-T9-4yY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VXk-kf-WMi"/>
+                            <constraint firstItem="2Jn-bW-UlC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YgK-E7-bWu"/>
+                            <constraint firstItem="Gia-wZ-wTe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="bvW-5Z-o3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Jn-bW-UlC" secondAttribute="trailing" constant="20" id="dml-GV-SAj"/>
+                            <constraint firstItem="rYJ-T9-4yY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="efs-kp-DyL"/>
+                            <constraint firstItem="Gia-wZ-wTe" firstAttribute="top" secondItem="2Jn-bW-UlC" secondAttribute="bottom" constant="100" id="otb-bh-1Z5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gia-wZ-wTe" secondAttribute="trailing" constant="40" id="zyo-YZ-hO2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="yfJ-Wc-jUL"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="rYJ-T9-4yY" id="eFO-8v-zcg"/>
+                        <outlet property="passwordTextField" destination="2Jn-bW-UlC" id="GVf-Mq-bjJ"/>
+                        <outlet property="submitButton" destination="Gia-wZ-wTe" id="Q6a-Th-daK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="119"/>
+        </scene>
+        <!--Tab Bar Menu View Controller-->
+        <scene sceneID="a2o-S5-xS3">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarMenuViewController" modalPresentationStyle="fullScreen" id="zu0-nR-5NY" customClass="TabBarMenuViewController" customModule="cogniwideAssesment" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mw1-lr-nVE"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IOd-1w-XUR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tFx-xw-wZn" kind="relationship" relationship="viewControllers" id="58z-Sb-rXP"/>
+                        <segue destination="Njm-aq-C09" kind="relationship" relationship="viewControllers" id="AMx-g1-9vC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRY-yx-Xv5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="1193"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JzH-0O-cmy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="deh-ZP-pXA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6kw-6J-l6j">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="DzF-2t-0sE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Jn-3A-9JO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="118.52678571428571"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="LMz-f3-8AF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vid-ud-OmC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tFx-xw-wZn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Post" id="Ctx-x8-amd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KDu-YU-QeZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AZa-32-6IX" kind="relationship" relationship="rootViewController" id="GCK-xf-W4N"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1499" y="835"/>
+        </scene>
+        <!--PostViewController-->
+        <scene sceneID="aJ4-BJ-rCd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Post" referencedIdentifier="PostViewController" id="AZa-32-6IX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lpM-86-7QF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpP-uj-C6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="814"/>
+        </scene>
+        <!--Favourite-->
+        <scene sceneID="xzU-PZ-fXp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Njm-aq-C09" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favourite" id="c6T-cu-uDr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2zu-uK-Ycg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c85-Vw-n02" kind="relationship" relationship="rootViewController" id="aKc-CO-W6n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ntl-Fj-Kaa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195.6521739130435" y="1516.7410714285713"/>
+        </scene>
+        <!--FavouriteViewController-->
+        <scene sceneID="fgU-0S-CYO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Favourite" referencedIdentifier="FavouriteViewController" id="c85-Vw-n02" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lLw-WE-hkF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t7x-WP-C9W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920" y="1562"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

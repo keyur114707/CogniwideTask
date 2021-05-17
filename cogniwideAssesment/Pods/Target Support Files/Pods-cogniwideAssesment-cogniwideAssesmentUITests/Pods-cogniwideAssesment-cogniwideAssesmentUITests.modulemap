@@ -1,0 +1,6 @@
+framework module Pods_cogniwideAssesment_cogniwideAssesmentUITests {
+  umbrella header "Pods-cogniwideAssesment-cogniwideAssesmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

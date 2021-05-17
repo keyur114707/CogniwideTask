@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_cogniwideAssesment_cogniwideAssesmentUITests : NSObject
+@end
+@implementation PodsDummy_Pods_cogniwideAssesment_cogniwideAssesmentUITests
+@end

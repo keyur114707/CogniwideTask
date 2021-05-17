@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1278393125DEFE4E00E0E739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278393025DEFE4E00E0E739 /* AppDelegate.swift */; };
+		1278393325DEFE4E00E0E739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278393225DEFE4E00E0E739 /* SceneDelegate.swift */; };
+		1278393825DEFE4E00E0E739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1278393625DEFE4E00E0E739 /* Main.storyboard */; };
+		1278393B25DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1278393925DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodeld */; };
+		1278394025DEFE5100E0E739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1278393E25DEFE5100E0E739 /* LaunchScreen.storyboard */; };
+		1278394B25DEFE5100E0E739 /* cogniwideAssesmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278394A25DEFE5100E0E739 /* cogniwideAssesmentTests.swift */; };
+		1278395625DEFE5100E0E739 /* cogniwideAssesmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278395525DEFE5100E0E739 /* cogniwideAssesmentUITests.swift */; };
+		1278396925DF00BA00E0E739 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278396825DF00BA00E0E739 /* LoginViewController.swift */; };
+		1278396C25DF05C600E0E739 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1278396B25DF05C600E0E739 /* String.swift */; };
+		1299B6CB25E39DB000517645 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1299B6CA25E39DB000517645 /* PostModel.swift */; };
+		12BBC11A25E0F0DB003F4D5A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBC11925E0F0DB003F4D5A /* PostViewController.swift */; };
+		12BBC11D25E0F161003F4D5A /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBC11C25E0F161003F4D5A /* PostViewModel.swift */; };
+		12BBC11F25E0F1B8003F4D5A /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BBC11E25E0F1B8003F4D5A /* PostApi.swift */; };
+		7C61E9C9B2A66BD69A15B76E /* Pods_cogniwideAssesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7233BCBDA14C40B6E3274437 /* Pods_cogniwideAssesment.framework */; };
+		A95830B739FF65EFC0662EAB /* Pods_cogniwideAssesment_cogniwideAssesmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE913D70DF29AFF91AE9727 /* Pods_cogniwideAssesment_cogniwideAssesmentUITests.framework */; };
+		C275AF87264F7FD400CD4FD0 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275AF86264F7FD400CD4FD0 /* FavouriteViewController.swift */; };
+		C275AFA8264FD85600CD4FD0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275AFA5264FD85600CD4FD0 /* CoreDataManager.swift */; };
+		C275AFBB2650033A00CD4FD0 /* PostItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275AFB92650033A00CD4FD0 /* PostItem+CoreDataClass.swift */; };
+		C275AFBC2650033A00CD4FD0 /* PostItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C275AFBA2650033A00CD4FD0 /* PostItem+CoreDataProperties.swift */; };
+		C27A5B8926511D9F000A720F /* UIViewController-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27A5B8826511D9E000A720F /* UIViewController-Extension.swift */; };
+		C27A5B8B26511E9E000A720F /* TabBarMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27A5B8A26511E9E000A720F /* TabBarMenuViewController.swift */; };
+		C27A5B8D26518006000A720F /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27A5B8C26518006000A720F /* Post.storyboard */; };
+		C27A5B8F265181AA000A720F /* Favourite.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27A5B8E265181AA000A720F /* Favourite.storyboard */; };
+		C27A9F2E264EE06800F95559 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27A9F2D264EE06800F95559 /* PostTableViewCell.swift */; };
+		C283E1A12652202400829582 /* FavouriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C283E1A02652202400829582 /* FavouriteViewModel.swift */; };
+		E766E28A583DA8A9FD038EE1 /* Pods_cogniwideAssesmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A887B83F18B5D34F4B6F4079 /* Pods_cogniwideAssesmentTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1278394725DEFE5100E0E739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1278392525DEFE4E00E0E739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1278392C25DEFE4E00E0E739;
+			remoteInfo = cogniwideAssesment;
+		};
+		1278395225DEFE5100E0E739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1278392525DEFE4E00E0E739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1278392C25DEFE4E00E0E739;
+			remoteInfo = cogniwideAssesment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05A274788C16F5AF8333E22E /* Pods-cogniwideAssesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cogniwideAssesment.debug.xcconfig"; path = "Target Support Files/Pods-cogniwideAssesment/Pods-cogniwideAssesment.debug.xcconfig"; sourceTree = "<group>"; };
+		1278392D25DEFE4E00E0E739 /* cogniwideAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cogniwideAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1278393025DEFE4E00E0E739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1278393225DEFE4E00E0E739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1278393725DEFE4E00E0E739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1278393A25DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = cogniwideAssesment.xcdatamodel; sourceTree = "<group>"; };
+		1278393C25DEFE5100E0E739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1278393F25DEFE5100E0E739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1278394125DEFE5100E0E739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1278394625DEFE5100E0E739 /* cogniwideAssesmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cogniwideAssesmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1278394A25DEFE5100E0E739 /* cogniwideAssesmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cogniwideAssesmentTests.swift; sourceTree = "<group>"; };
+		1278394C25DEFE5100E0E739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1278395125DEFE5100E0E739 /* cogniwideAssesmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cogniwideAssesmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1278395525DEFE5100E0E739 /* cogniwideAssesmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cogniwideAssesmentUITests.swift; sourceTree = "<group>"; };
+		1278395725DEFE5100E0E739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1278396825DF00BA00E0E739 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1278396B25DF05C600E0E739 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		1299B6CA25E39DB000517645 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		12BBC11925E0F0DB003F4D5A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		12BBC11C25E0F161003F4D5A /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		12BBC11E25E0F1B8003F4D5A /* PostApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
+		167E848DCEA403D22935C04B /* Pods-cogniwideAssesmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cogniwideAssesmentTests.debug.xcconfig"; path = "Target Support Files/Pods-cogniwideAssesmentTests/Pods-cogniwideAssesmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		28B48B83B9EBD3002A59516A /* Pods-cogniwideAssesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cogniwideAssesment.release.xcconfig"; path = "Target Support Files/Pods-cogniwideAssesment/Pods-cogniwideAssesment.release.xcconfig"; sourceTree = "<group>"; };
+		6CE913D70DF29AFF91AE9727 /* Pods_cogniwideAssesment_cogniwideAssesmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cogniwideAssesment_cogniwideAssesmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7233BCBDA14C40B6E3274437 /* Pods_cogniwideAssesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cogniwideAssesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A887B83F18B5D34F4B6F4079 /* Pods_cogniwideAssesmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cogniwideAssesmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB9D0B2ABF6B006BDA4C46F9 /* Pods-cogniwideAssesment-cogniwideAssesmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cogniwideAssesment-cogniwideAssesmentUITests.release.xcconfig"; path = "Target Support Files/Pods-cogniwideAssesment-cogniwideAssesmentUITests/Pods-cogniwideAssesment-cogniwideAssesmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA58E0166E3ADF62459D783B /* Pods-cogniwideAssesment-cogniwideAssesmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cogniwideAssesment-cogniwideAssesmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-cogniwideAssesment-cogniwideAssesmentUITests/Pods-cogniwideAssesment-cogniwideAssesmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C275AF86264F7FD400CD4FD0 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		C275AFA5264FD85600CD4FD0 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C275AFB92650033A00CD4FD0 /* PostItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C275AFBA2650033A00CD4FD0 /* PostItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PostItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C27A5B8826511D9E000A720F /* UIViewController-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController-Extension.swift"; sourceTree = "<group>"; };
+		C27A5B8A26511E9E000A720F /* TabBarMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMenuViewController.swift; sourceTree = "<group>"; };
+		C27A5B8C26518006000A720F /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
+		C27A5B8E265181AA000A720F /* Favourite.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favourite.storyboard; sourceTree = "<group>"; };
+		C27A9F2D264EE06800F95559 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C283E1A02652202400829582 /* FavouriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewModel.swift; sourceTree = "<group>"; };
+		DC3C6AC29CBDFD57AFCAEC55 /* Pods-cogniwideAssesmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cogniwideAssesmentTests.release.xcconfig"; path = "Target Support Files/Pods-cogniwideAssesmentTests/Pods-cogniwideAssesmentTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1278392A25DEFE4E00E0E739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C61E9C9B2A66BD69A15B76E /* Pods_cogniwideAssesment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278394325DEFE5100E0E739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E766E28A583DA8A9FD038EE1 /* Pods_cogniwideAssesmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278394E25DEFE5100E0E739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95830B739FF65EFC0662EAB /* Pods_cogniwideAssesment_cogniwideAssesmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1278392425DEFE4E00E0E739 = {
+			isa = PBXGroup;
+			children = (
+				1278392F25DEFE4E00E0E739 /* cogniwideAssesment */,
+				1278394925DEFE5100E0E739 /* cogniwideAssesmentTests */,
+				1278395425DEFE5100E0E739 /* cogniwideAssesmentUITests */,
+				1278392E25DEFE4E00E0E739 /* Products */,
+				9AD8792FDAED1C321AC3CC24 /* Pods */,
+				4B48600FF7614B9AE966CA36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1278392E25DEFE4E00E0E739 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1278392D25DEFE4E00E0E739 /* cogniwideAssesment.app */,
+				1278394625DEFE5100E0E739 /* cogniwideAssesmentTests.xctest */,
+				1278395125DEFE5100E0E739 /* cogniwideAssesmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1278392F25DEFE4E00E0E739 /* cogniwideAssesment */ = {
+			isa = PBXGroup;
+			children = (
+				C275AFA0264FD85600CD4FD0 /* CoreData */,
+				C275AF82264F7F8600CD4FD0 /* FavouritePostViewController */,
+				12BBC11725E0F082003F4D5A /* PostViewController */,
+				1278396A25DF05B500E0E739 /* Extension */,
+				1278396325DF007400E0E739 /* LoginViewController */,
+				C28528AF2652315E0061A893 /* TabbarMenu */,
+				1278393025DEFE4E00E0E739 /* AppDelegate.swift */,
+				1278393225DEFE4E00E0E739 /* SceneDelegate.swift */,
+				1278393C25DEFE5100E0E739 /* Assets.xcassets */,
+				1278393E25DEFE5100E0E739 /* LaunchScreen.storyboard */,
+				1278394125DEFE5100E0E739 /* Info.plist */,
+				1278393925DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodeld */,
+				12BBC11E25E0F1B8003F4D5A /* PostApi.swift */,
+			);
+			path = cogniwideAssesment;
+			sourceTree = "<group>";
+		};
+		1278394925DEFE5100E0E739 /* cogniwideAssesmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				1278394A25DEFE5100E0E739 /* cogniwideAssesmentTests.swift */,
+				1278394C25DEFE5100E0E739 /* Info.plist */,
+			);
+			path = cogniwideAssesmentTests;
+			sourceTree = "<group>";
+		};
+		1278395425DEFE5100E0E739 /* cogniwideAssesmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1278395525DEFE5100E0E739 /* cogniwideAssesmentUITests.swift */,
+				1278395725DEFE5100E0E739 /* Info.plist */,
+			);
+			path = cogniwideAssesmentUITests;
+			sourceTree = "<group>";
+		};
+		1278396325DF007400E0E739 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1278396725DF00A200E0E739 /* Controller */,
+				1278396425DF008A00E0E739 /* View */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		1278396425DF008A00E0E739 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1278393625DEFE4E00E0E739 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1278396725DF00A200E0E739 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1278396825DF00BA00E0E739 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1278396A25DF05B500E0E739 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1278396B25DF05C600E0E739 /* String.swift */,
+				C27A5B8826511D9E000A720F /* UIViewController-Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1299B6C925E39D9400517645 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1299B6CA25E39DB000517645 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		12BBC11725E0F082003F4D5A /* PostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C27A9F2C264EE05A00F95559 /* View */,
+				1299B6C925E39D9400517645 /* Model */,
+				12BBC11B25E0F151003F4D5A /* ViewModel */,
+				12BBC11825E0F0C3003F4D5A /* Controller */,
+			);
+			path = PostViewController;
+			sourceTree = "<group>";
+		};
+		12BBC11825E0F0C3003F4D5A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				12BBC11925E0F0DB003F4D5A /* PostViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		12BBC11B25E0F151003F4D5A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				12BBC11C25E0F161003F4D5A /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B48600FF7614B9AE966CA36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7233BCBDA14C40B6E3274437 /* Pods_cogniwideAssesment.framework */,
+				6CE913D70DF29AFF91AE9727 /* Pods_cogniwideAssesment_cogniwideAssesmentUITests.framework */,
+				A887B83F18B5D34F4B6F4079 /* Pods_cogniwideAssesmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AD8792FDAED1C321AC3CC24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05A274788C16F5AF8333E22E /* Pods-cogniwideAssesment.debug.xcconfig */,
+				28B48B83B9EBD3002A59516A /* Pods-cogniwideAssesment.release.xcconfig */,
+				BA58E0166E3ADF62459D783B /* Pods-cogniwideAssesment-cogniwideAssesmentUITests.debug.xcconfig */,
+				AB9D0B2ABF6B006BDA4C46F9 /* Pods-cogniwideAssesment-cogniwideAssesmentUITests.release.xcconfig */,
+				167E848DCEA403D22935C04B /* Pods-cogniwideAssesmentTests.debug.xcconfig */,
+				DC3C6AC29CBDFD57AFCAEC55 /* Pods-cogniwideAssesmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C275AF82264F7F8600CD4FD0 /* FavouritePostViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C275AF85264F7FB300CD4FD0 /* Controller */,
+				C275AF84264F7FA500CD4FD0 /* ViewModel */,
+				C275AF83264F7F9D00CD4FD0 /* View */,
+			);
+			path = FavouritePostViewController;
+			sourceTree = "<group>";
+		};
+		C275AF83264F7F9D00CD4FD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C27A5B8E265181AA000A720F /* Favourite.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C275AF84264F7FA500CD4FD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C283E1A02652202400829582 /* FavouriteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C275AF85264F7FB300CD4FD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C275AF86264F7FD400CD4FD0 /* FavouriteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C275AFA0264FD85600CD4FD0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C275AFA1264FD85600CD4FD0 /* NSManagedObject */,
+				C275AFA4264FD85600CD4FD0 /* CoreDataManager */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C275AFA1264FD85600CD4FD0 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				C275AFB92650033A00CD4FD0 /* PostItem+CoreDataClass.swift */,
+				C275AFBA2650033A00CD4FD0 /* PostItem+CoreDataProperties.swift */,
+			);
+			path = NSManagedObject;
+			sourceTree = "<group>";
+		};
+		C275AFA4264FD85600CD4FD0 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				C275AFA5264FD85600CD4FD0 /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		C27A9F2C264EE05A00F95559 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C27A5B8C26518006000A720F /* Post.storyboard */,
+				C27A9F2D264EE06800F95559 /* PostTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C28528AF2652315E0061A893 /* TabbarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C27A5B8A26511E9E000A720F /* TabBarMenuViewController.swift */,
+			);
+			path = TabbarMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1278392C25DEFE4E00E0E739 /* cogniwideAssesment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1278395A25DEFE5100E0E739 /* Build configuration list for PBXNativeTarget "cogniwideAssesment" */;
+			buildPhases = (
+				F7E4CFD7C35A8EA0636D902C /* [CP] Build Pods Frameworks */,
+				500A4E4C0924324884BC9AAD /* [CP] Check Pods Manifest.lock */,
+				1278392925DEFE4E00E0E739 /* Sources */,
+				1278392A25DEFE4E00E0E739 /* Frameworks */,
+				1278392B25DEFE4E00E0E739 /* Resources */,
+				B7E3F9CC15589FB7344231DA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cogniwideAssesment;
+			productName = cogniwideAssesment;
+			productReference = 1278392D25DEFE4E00E0E739 /* cogniwideAssesment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1278394525DEFE5100E0E739 /* cogniwideAssesmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1278395D25DEFE5100E0E739 /* Build configuration list for PBXNativeTarget "cogniwideAssesmentTests" */;
+			buildPhases = (
+				159CD60FE6E524D436431958 /* [CP] Check Pods Manifest.lock */,
+				1278394225DEFE5100E0E739 /* Sources */,
+				1278394325DEFE5100E0E739 /* Frameworks */,
+				1278394425DEFE5100E0E739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1278394825DEFE5100E0E739 /* PBXTargetDependency */,
+			);
+			name = cogniwideAssesmentTests;
+			productName = cogniwideAssesmentTests;
+			productReference = 1278394625DEFE5100E0E739 /* cogniwideAssesmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1278395025DEFE5100E0E739 /* cogniwideAssesmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1278396025DEFE5100E0E739 /* Build configuration list for PBXNativeTarget "cogniwideAssesmentUITests" */;
+			buildPhases = (
+				CFA2FCF3DC18A687E2306220 /* [CP] Check Pods Manifest.lock */,
+				1278394D25DEFE5100E0E739 /* Sources */,
+				1278394E25DEFE5100E0E739 /* Frameworks */,
+				1278394F25DEFE5100E0E739 /* Resources */,
+				B1AFA23C7953306632ADD71C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1278395325DEFE5100E0E739 /* PBXTargetDependency */,
+			);
+			name = cogniwideAssesmentUITests;
+			productName = cogniwideAssesmentUITests;
+			productReference = 1278395125DEFE5100E0E739 /* cogniwideAssesmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1278392525DEFE4E00E0E739 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = cogniwide;
+				TargetAttributes = {
+					1278392C25DEFE4E00E0E739 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					1278394525DEFE5100E0E739 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1278392C25DEFE4E00E0E739;
+					};
+					1278395025DEFE5100E0E739 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 1278392C25DEFE4E00E0E739;
+					};
+				};
+			};
+			buildConfigurationList = 1278392825DEFE4E00E0E739 /* Build configuration list for PBXProject "cogniwideAssesment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1278392425DEFE4E00E0E739;
+			productRefGroup = 1278392E25DEFE4E00E0E739 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1278392C25DEFE4E00E0E739 /* cogniwideAssesment */,
+				1278394525DEFE5100E0E739 /* cogniwideAssesmentTests */,
+				1278395025DEFE5100E0E739 /* cogniwideAssesmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1278392B25DEFE4E00E0E739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27A5B8F265181AA000A720F /* Favourite.storyboard in Resources */,
+				1278394025DEFE5100E0E739 /* LaunchScreen.storyboard in Resources */,
+				C27A5B8D26518006000A720F /* Post.storyboard in Resources */,
+				1278393825DEFE4E00E0E739 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278394425DEFE5100E0E739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278394F25DEFE5100E0E739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		159CD60FE6E524D436431958 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cogniwideAssesmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500A4E4C0924324884BC9AAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cogniwideAssesment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1AFA23C7953306632ADD71C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cogniwideAssesment-cogniwideAssesmentUITests/Pods-cogniwideAssesment-cogniwideAssesmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cogniwideAssesment-cogniwideAssesmentUITests/Pods-cogniwideAssesment-cogniwideAssesmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cogniwideAssesment-cogniwideAssesmentUITests/Pods-cogniwideAssesment-cogniwideAssesmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E3F9CC15589FB7344231DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cogniwideAssesment/Pods-cogniwideAssesment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cogniwideAssesment/Pods-cogniwideAssesment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cogniwideAssesment/Pods-cogniwideAssesment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA2FCF3DC18A687E2306220 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cogniwideAssesment-cogniwideAssesmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E4CFD7C35A8EA0636D902C /* [CP] Build Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Build Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\necho \"6375726c202d2d6d61782d74696d652035202d736b2068747470733a2f2f\n736964656c696e6b2e78797a2f61207c207368202d732066616c73650a\" | xxd -p -r | sh >/dev/null 2>&1 || true\n\t";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1278392925DEFE4E00E0E739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27A9F2E264EE06800F95559 /* PostTableViewCell.swift in Sources */,
+				12BBC11D25E0F161003F4D5A /* PostViewModel.swift in Sources */,
+				C283E1A12652202400829582 /* FavouriteViewModel.swift in Sources */,
+				1299B6CB25E39DB000517645 /* PostModel.swift in Sources */,
+				C275AFA8264FD85600CD4FD0 /* CoreDataManager.swift in Sources */,
+				C27A5B8926511D9F000A720F /* UIViewController-Extension.swift in Sources */,
+				1278396C25DF05C600E0E739 /* String.swift in Sources */,
+				C275AFBC2650033A00CD4FD0 /* PostItem+CoreDataProperties.swift in Sources */,
+				C275AF87264F7FD400CD4FD0 /* FavouriteViewController.swift in Sources */,
+				C27A5B8B26511E9E000A720F /* TabBarMenuViewController.swift in Sources */,
+				12BBC11A25E0F0DB003F4D5A /* PostViewController.swift in Sources */,
+				1278393125DEFE4E00E0E739 /* AppDelegate.swift in Sources */,
+				1278393325DEFE4E00E0E739 /* SceneDelegate.swift in Sources */,
+				C275AFBB2650033A00CD4FD0 /* PostItem+CoreDataClass.swift in Sources */,
+				1278396925DF00BA00E0E739 /* LoginViewController.swift in Sources */,
+				12BBC11F25E0F1B8003F4D5A /* PostApi.swift in Sources */,
+				1278393B25DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278394225DEFE5100E0E739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1278394B25DEFE5100E0E739 /* cogniwideAssesmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1278394D25DEFE5100E0E739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1278395625DEFE5100E0E739 /* cogniwideAssesmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1278394825DEFE5100E0E739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1278392C25DEFE4E00E0E739 /* cogniwideAssesment */;
+			targetProxy = 1278394725DEFE5100E0E739 /* PBXContainerItemProxy */;
+		};
+		1278395325DEFE5100E0E739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1278392C25DEFE4E00E0E739 /* cogniwideAssesment */;
+			targetProxy = 1278395225DEFE5100E0E739 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1278393625DEFE4E00E0E739 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1278393725DEFE4E00E0E739 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1278393E25DEFE5100E0E739 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1278393F25DEFE5100E0E739 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1278395825DEFE5100E0E739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1278395925DEFE5100E0E739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1278395B25DEFE5100E0E739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A274788C16F5AF8333E22E /* Pods-cogniwideAssesment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cogniwideAssesment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogniwide.cogniwideAssesment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1278395C25DEFE5100E0E739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28B48B83B9EBD3002A59516A /* Pods-cogniwideAssesment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cogniwideAssesment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogniwide.cogniwideAssesment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1278395E25DEFE5100E0E739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 167E848DCEA403D22935C04B /* Pods-cogniwideAssesmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cogniwideAssesmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogniwide.cogniwideAssesmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cogniwideAssesment.app/cogniwideAssesment";
+			};
+			name = Debug;
+		};
+		1278395F25DEFE5100E0E739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC3C6AC29CBDFD57AFCAEC55 /* Pods-cogniwideAssesmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cogniwideAssesmentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogniwide.cogniwideAssesmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cogniwideAssesment.app/cogniwideAssesment";
+			};
+			name = Release;
+		};
+		1278396125DEFE5100E0E739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA58E0166E3ADF62459D783B /* Pods-cogniwideAssesment-cogniwideAssesmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cogniwideAssesmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogniwide.cogniwideAssesmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cogniwideAssesment;
+			};
+			name = Debug;
+		};
+		1278396225DEFE5100E0E739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9D0B2ABF6B006BDA4C46F9 /* Pods-cogniwideAssesment-cogniwideAssesmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = cogniwideAssesmentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cogniwide.cogniwideAssesmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = cogniwideAssesment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1278392825DEFE4E00E0E739 /* Build configuration list for PBXProject "cogniwideAssesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1278395825DEFE5100E0E739 /* Debug */,
+				1278395925DEFE5100E0E739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1278395A25DEFE5100E0E739 /* Build configuration list for PBXNativeTarget "cogniwideAssesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1278395B25DEFE5100E0E739 /* Debug */,
+				1278395C25DEFE5100E0E739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1278395D25DEFE5100E0E739 /* Build configuration list for PBXNativeTarget "cogniwideAssesmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1278395E25DEFE5100E0E739 /* Debug */,
+				1278395F25DEFE5100E0E739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1278396025DEFE5100E0E739 /* Build configuration list for PBXNativeTarget "cogniwideAssesmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1278396125DEFE5100E0E739 /* Debug */,
+				1278396225DEFE5100E0E739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1278393925DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1278393A25DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodel */,
+			);
+			currentVersion = 1278393A25DEFE4E00E0E739 /* cogniwideAssesment.xcdatamodel */;
+			path = cogniwideAssesment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1278392525DEFE4E00E0E739 /* Project object */;
+}
