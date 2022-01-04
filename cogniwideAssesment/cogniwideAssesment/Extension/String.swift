@@ -20,7 +20,7 @@ extension String {
     }
     var isValidPassword: Bool {
         do {
-            let regex = try NSRegularExpression(pattern: "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,20}$", options: .caseInsensitive)
+            let regex = try NSRegularExpression(pattern: "^(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[!#$%&'()\"+,-./:;<=>?@^_`{|}~])[A-Za-z0-9!#$%&'()+,-./:;<=>?@^_`{|}~]{9,100}$", options: .caseInsensitive)
             return regex.firstMatch(in: self, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count)) != nil
         }
         catch {
